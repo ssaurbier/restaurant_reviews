@@ -1,5 +1,5 @@
 streamlit
 bardapi
 python-dotenv
-pandas
-re
+
+
