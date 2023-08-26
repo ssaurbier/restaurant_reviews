@@ -5,18 +5,14 @@ import re
 import os
 from dotenv import load_dotenv 
 
-load_dotenv()
-token = os.getenv('token')
-bard = Bard(token=token)
+token = st.secrets["token"]
+
 
 
 # methods
 
 def search_params(filename, restaurant_name, location_name):
-    with open(filename, 'r') as file:
-        content = file.read()
-        
-    # replace placeholders with actual values
+    content = st.secrets["prompt"]
     content = content.replace('{restaurant}', restaurant_name)
     content = content.replace('{location}', location_name)
     
@@ -24,10 +20,7 @@ def search_params(filename, restaurant_name, location_name):
 
 
 def create_second_prompt(filename, initial_output):
-    with open(filename, 'r') as file:
-        content = file.read()
-        
-    # replace placeholders with actual values
+    content = st.secrets["filterprompt"]
     content = content.replace('{intial_output}', initial_output)
 
     return content
