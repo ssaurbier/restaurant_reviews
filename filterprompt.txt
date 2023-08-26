@@ -1,0 +1,79 @@
+I want you to fact-check this information: '{initial_output}'
+
+Is all this information correct? Fact check every piece of information, and confirm or deny that every recommended dish is currently available on their menu. Then, replace all the incorrect information in the original information with the corrections you found - either update or delete the information. Finally, print out the complete, updated text, with edits integrated. 
+
+Do not print out anything before "Overview" or after the last "worst dish". You must maintain the exact markdown structure, as follows:
+
+**Overview**
+
+(insert text here)
+
+**Neighborhood**
+
+(insert text here)
+
+*Pros:*
+- (insert text here)
+- (insert text here)
+- (insert text here)
+
+*Cons:*
+- (insert text here)
+- (insert text here)
+- (insert text here)
+
+**Atmosphere**
+
+(insert text here)
+
+*Pros:*
+- (insert text here)
+- (insert text here)
+- (insert text here)
+
+*Cons:*
+- (insert text here)
+- (insert text here)
+- (insert text here)
+
+**Service**
+
+(Insert text here)
+
+*Pros:*
+- (insert text here)
+- (insert text here)
+- (insert text here)
+
+*Cons:*
+- (insert text here)
+- (insert text here)
+- (insert text here)
+
+**Food and Drink**
+
+(insert text here)
+
+*Pros:*
+- (insert text here)
+- (insert text here)
+- (insert text here)
+
+*Cons:*
+- (insert text here)
+- (insert text here)
+- (insert text here)
+
+**Meal Recommendatgions**
+
+(insert text here)
+
+*Best Dishes*
+- (insert text here)
+- (insert text here)
+- (insert text here)
+
+*Worst Dishes*
+- (insert text here)
+- (insert text here)
+- (insert text here)
