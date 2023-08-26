@@ -7,7 +7,7 @@ from dotenv import load_dotenv
 
 token = st.secrets["token"]
 
-
+bard = Bard(token=token)
 
 # methods
 
