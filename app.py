@@ -9,7 +9,7 @@ token = st.secrets["token"]
 
 
 
-bard = Bard(token=token, proxies={'http':'http://127.0.0.1:1080', 'https':'http://127.0.0.1:1080'}, timeout = 60)
+bard = Bard(token=token,  timeout = 60)
 
 # methods
 
