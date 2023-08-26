@@ -7,7 +7,12 @@ from dotenv import load_dotenv
 
 token = st.secrets["token"]
 
-bard = Bard(token=token, timeout = 60)
+proxies = {
+'http': 'http://127.0.0.1:7890',
+'https': 'http://127.0.0.1:7890'
+}
+
+bard = Bard(token=token, proxies = proxies, timeout = 60)
 
 # methods
 
