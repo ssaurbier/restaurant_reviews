@@ -1,5 +1,10 @@
 streamlit
 bardapi
 python-dotenv
-
-
+browser-cookie3
+colorama
+deep-translator
+google-cloud-translate
+httpx
+langdetect
+requests
