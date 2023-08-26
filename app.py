@@ -43,9 +43,15 @@ if st.button("Generate Review"):
     prompt = search_params('prompt.txt', restaurant_name, location_name)
     initial_result = bard.get_answer(prompt)['content']
     
+    time.sleep(10)
+    
     # second call
     secondary_prompt = create_second_prompt('filterprompt.txt', initial_result)  
+    
+    time.sleep(10)
     final_result = bard.get_answer(secondary_prompt)['content']
+    
+    time.sleep(10)
     
     
     final_result = re.sub(r"^.*?(\*\*Overview\*\*)", r"\1", final_result, flags=re.DOTALL).strip()
